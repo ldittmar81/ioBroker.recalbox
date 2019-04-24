@@ -1,0 +1,98 @@
+{
+    "common": {
+        "name": "recalbox",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Recalbox",
+        "titleLang": {
+            "en": "Recalbox",
+            "de": "Recalbox",
+            "ru": "Recalbox",
+            "pt": "Recalbox",
+            "nl": "Recalbox",
+            "fr": "Recalbox",
+            "it": "Recalbox",
+            "es": "Recalbox",
+            "pl": "Recalbox",
+            "zh-cn": "Recalbox"
+        },
+        "desc": {
+            "en": "Control your Reacalbox with ioBroker",
+            "de": "Kontrolliere deine Reacalbox mit ioBroker",
+            "ru": "Управляйте своим Reacalbox с ioBroker",
+            "pt": "Controle o seu Reacalbox com o ioBroker",
+            "nl": "Beheer uw Reacalbox met ioBroker",
+            "fr": "Contrôlez votre Reacalbox avec ioBroker",
+            "it": "Controlla il tuo Reacalbox con ioBroker",
+            "es": "Controla tu Reacalbox con ioBroker",
+            "pl": "Kontroluj Reacalbox za pomocą ioBroker",
+            "zh-cn": "使用ioBroker控制Reacalbox"
+        },
+        "authors": [
+            "ldittmar <iobroker@lmdsoft.de>"
+        ],
+        "keywords": [
+            "ioBroker",
+            "template",
+            "Smart Home",
+            "home automation"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "recalbox.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/ldittmar81/ioBroker.recalbox/master/admin/recalbox.png",
+        "readme": "https://github.com/ldittmar81/ioBroker.recalbox/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "multimedia",
+        "compact": true,
+        "materialize": true,
+        "dependencies": [
+            {
+                "admin": ">=3.0.0"
+            }
+        ]
+    },
+    "native": {
+        "IP": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "If connected to device or service",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
